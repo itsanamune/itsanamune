@@ -31,10 +31,9 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 ## 📊 GitHub Stats
 
-![itsanamune's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)
-![trophy](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark)
+<!--START_SECTION:github_stats-->
+<!-- The GitHub Action will insert stats here -->
+<!--END_SECTION:github_stats-->
 
 ---
 
@@ -70,7 +69,3 @@ I am currently focused on enhancing my skills in AI-driven SEO strategies, expan
 ### 🚀 Let's Connect!
 
 Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, or web development!
-
----
-
-By using these dynamic stats cards and tools, your GitHub profile README will reflect real-time data, giving visitors an up-to-date and engaging overview of your activity and achievements on GitHub. Would you like to implement these or make any further adjustments?
