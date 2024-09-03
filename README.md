@@ -32,7 +32,10 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 ## 📊 GitHub Stats
 
 <!--START_SECTION:github_stats-->
-<!-- GitHub Actions will automatically insert your dynamic stats here -->
+![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)
+![Trophies](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark)
 <!--END_SECTION:github_stats-->
 
 ---
