@@ -1,8 +1,8 @@
 # Hello, I'm Timothy Biondollo 👋
 
-## 🚀 AI Specialist | SEO Content Creator | Web Developer
+## 🚀 AI Specialist | SEO Content Creator | Web Developer | Google API Expert
 
-I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Currently, I work as an SEO Content AI Specialist at Spikeup Media, where I create custom prompts for LLMs, develop streamlined processes for AI content generation, and perform data analysis and automation.
+I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Currently, I work as an SEO Content AI Specialist at Spikeup Media, where I create custom prompts for LLMs, develop streamlined processes for AI content generation, and perform data analysis and automation. I also specialize in Google APIs and React development.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=itsanamune&color=blueviolet)
 
@@ -12,10 +12,32 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Google Cloud](https://img.shields.io/badge/-Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+---
+
+## 🌟 Google API & Development Expertise
+
+- **Google Analytics**: Advanced implementation and data analysis
+- **Google Search Console**: SEO optimization and search performance tracking
+- **Google App Scripts**: Automation and custom solutions for Google Workspace
+- **Google Marketplace**: Development of add-ons and extensions
+- **Google Cloud Platform**: Utilizing various GCP services for scalable solutions
+
+---
+
+## 💻 Web Development Skills
+
+- **React**: Creating dynamic and responsive web applications
+- **Create React App**: Rapid development of React applications
+- **Front-end Development**: HTML5, CSS3, JavaScript (ES6+)
+- **API Integration**: RESTful APIs, GraphQL
+- **State Management**: Redux, Context API
 
 ---
 
@@ -30,6 +52,10 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 ---
 
 ## 📊 GitHub Stats (Including Private Repositories)
+
+<!-- START_SECTION:stats -->
+<!-- This section will be automatically updated by the GitHub Action -->
+<!-- END_SECTION:stats -->
 
 ![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true)
 
@@ -56,7 +82,7 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 ## 📈 Current Focus
 
-I am currently focused on enhancing my skills in AI-driven SEO strategies, expanding my knowledge in machine learning frameworks, and contributing to open-source AI projects that make an impact.
+I am currently focused on enhancing my skills in AI-driven SEO strategies, expanding my knowledge in machine learning frameworks, and contributing to open-source AI projects that make an impact. Additionally, I'm exploring advanced applications of Google APIs and developing innovative React-based solutions.
 
 ---
 
@@ -65,88 +91,10 @@ I am currently focused on enhancing my skills in AI-driven SEO strategies, expan
 - 🔍 I enjoy experimenting with new AI models and frameworks.
 - 🎮 I'm a big fan of slot games and developing content strategies around them.
 - 📚 In my spare time, I love reading about technological advancements and AI ethics.
+- 🌐 I've developed several Chrome extensions to enhance productivity.
 
 ---
 
 ## 🚀 Let's Connect!
 
-Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, or web development!
-<!--END_SECTION:github_stats-->
-
----
-
-## 🌐 How to Reach Me
-
-[![Email](https://img.shields.io/badge/Email-itsanamune%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:itsanamune@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Timothy%20Biondollo-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/timothy-biondollo)
-
----
-
-## 🏅 Certifications and Achievements
-
-- **Google Analytics Certified**: Advanced understanding of web analytics and user behavior.
-- **HubSpot Content Marketing Certified**: Expert in developing high-quality content strategies.
-- **Certified in Python for Data Science**: Proficient in Python for data analysis and machine learning applications.
-
----
-
-## 📈 Current Focus
-
-I am currently focused on enhancing my skills in AI-driven SEO strategies, expanding my knowledge in machine learning frameworks, and contributing to open-source AI projects that make an impact.
-
----
-
-## 🤖 Fun Facts
-
-- 🔍 I enjoy experimenting with new AI models and frameworks.
-- 🎮 I'm a big fan of slot games and developing content strategies around them.
-- 📚 In my spare time, I love reading about technological advancements and AI ethics.
-
----
-
-## 🚀 Let's Connect!
-
-Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, or web development!
-<!--START_SECTION:github_stats-->
-![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)
-![Trophies](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark&column=7)
-<!--END_SECTION:github_stats-->
-<!--END_SECTION:github_stats-->
-<!--END_SECTION:github_stats-->
-
----
-
-## 🌐 How to Reach Me
-
-[![Email](https://img.shields.io/badge/Email-itsanamune%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:itsanamune@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Timothy%20Biondollo-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/timothy-biondollo)
-
----
-
-## 🏅 Certifications and Achievements
-
-- **Google Analytics Certified**: Advanced understanding of web analytics and user behavior.
-- **HubSpot Content Marketing Certified**: Expert in developing high-quality content strategies.
-- **Certified in Python for Data Science**: Proficient in Python for data analysis and machine learning applications.
-
----
-
-## 📈 Current Focus
-
-I am currently focused on enhancing my skills in AI-driven SEO strategies, expanding my knowledge in machine learning frameworks, and contributing to open-source AI projects that make an impact.
-
----
-
-## 🤖 Fun Facts
-
-- 🔍 I enjoy experimenting with new AI models and frameworks.
-- 🎮 I'm a big fan of slot games and developing content strategies around them.
-- 📚 In my spare time, I love reading about technological advancements and AI ethics.
-
----
-
-## 🚀 Let's Connect!
-
-Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, or web development!
+Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, web development, or Google API implementations!
