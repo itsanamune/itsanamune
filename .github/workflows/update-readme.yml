@@ -1,4 +1,4 @@
-name: Update README
+name: Update README with Private Repo Stats
 
 on:
   schedule:
@@ -15,38 +15,36 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Configure Git
-        run: |
-          git config user.name 'GitHub Actions Bot'
-          git config user.email 'actions@github.com'
-
-      - name: Fetch latest changes
-        run: |
-          git fetch origin main
-
       - name: Update README
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          # Store existing content
-          cp README.md README.md.bak
+          # Fetch private stats
+          private_stats=$(curl -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/users/itsanamune)
           
-          # Update the stats section
-          sed -n '/<!--START_SECTION:github_stats-->/,/<!--END_SECTION:github_stats-->/!p' README.md.bak > README.md
-          echo "<!--START_SECTION:github_stats-->" >> README.md
-          echo "![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical)" >> README.md
-          echo "![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)" >> README.md
-          echo "![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)" >> README.md
-          echo "![Trophies](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark&column=7)" >> README.md
-          echo "<!--END_SECTION:github_stats-->" >> README.md
+          # Extract relevant data
+          public_repos=$(echo $private_stats | jq .public_repos)
+          total_repos=$(echo $private_stats | jq .total_private_repos)
+          followers=$(echo $private_stats | jq .followers)
+          following=$(echo $private_stats | jq .following)
           
-          # Append the rest of the content
-          sed -n '/<!--END_SECTION:github_stats-->/,$p' README.md.bak >> README.md
-          
-          # Clean up
-          rm README.md.bak
+          # Update README
+          sed -i '/<!-- START_SECTION:stats -->/,/<!-- END_SECTION:stats -->/c\
+          <!-- START_SECTION:stats -->\
+          **GitHub Stats (including private repositories):**\
+          - Total Repositories: '"$((public_repos + total_repos))"'\
+          - Public Repositories: '"$public_repos"'\
+          - Private Repositories: '"$total_repos"'\
+          - Followers: '"$followers"'\
+          - Following: '"$following"'\
+          <!-- END_SECTION:stats -->' README.md
 
       - name: Commit and Push Changes
         run: |
+          git config user.name 'GitHub Actions Bot'
+          git config user.email 'actions@github.com'
           git add README.md
-          git commit -m "Update README with latest stats" || exit 0
-          git pull --rebase origin main
+          git commit -m "Update README with latest private stats" || exit 0
           git push
