@@ -5,17 +5,22 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight
   workflow_dispatch:     # Allows manual triggering of the workflow
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Update README with Stats
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the PAT stored in GitHub Secrets
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           echo "Fetching GitHub Stats..."
           echo "![itsanamune's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true&include_all_commits=true&token=${GITHUB_TOKEN})" > README.md
@@ -24,12 +29,9 @@ jobs:
           echo "![trophy](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark)" >> README.md
 
       - name: Commit changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Ensure the PAT is used for pushing changes
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/itsanamune/itsanamune.git
           git add README.md
           git commit -m "Update README with latest GitHub stats" || echo "No changes to commit"
           git push
