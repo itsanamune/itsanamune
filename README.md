@@ -32,7 +32,7 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 ## 📊 GitHub Stats
 
 <!--START_SECTION:github_stats-->
-<!-- The GitHub Action will insert stats here -->
+<!-- GitHub Actions will automatically insert your dynamic stats here -->
 <!--END_SECTION:github_stats-->
 
 ---
