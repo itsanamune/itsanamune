@@ -18,10 +18,10 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 ## 🏆 Notable Projects
 
 - [**ai-content-generate**](https://github.com/itsanamune/ai-content-generate): Python script leveraging GPT-3 for SEO-optimized articles.
-- [**NLP_SEO_keyword_extractor**](https://github.com/itsanamune/NLP_SEO_keyword_extractor): Extracts keywords using NLP techniques.
-- [**outline_generator**](https://github.com/itsanamune/outline_generator): Generates outlines from templates.
-- [**SEOArticlegenAI**](https://github.com/itsanamune/SEOArticlegenAI): AI-powered SEO article generator.
-- [**TIMGPT**](https://github.com/itsanamune/TIMGPT): Personal GPT-4 project with advanced prompt engineering.
+- [**NLP_SEO_keyword_extractor**](https://github.com/itsanamune/NLP_SEO_keyword_extractor): Extracts onpage SEO keywords from any content. Allows the user to find out what keywords their competitors are using in their content and at what frequency.
+- [**outline_generator**](https://github.com/itsanamune/outline_generator): Generates content outlines from customizable templates. Allows the user to use one content template for a single content topic and produce content outlines at scale.
+- [**SEOArticlegenAI**](https://github.com/itsanamune/SEOArticlegenAI): AI-powered SEO article generator. Generates SEO optimized blog articles at scale and ready to be published.
+- [**TIMGPT**](https://github.com/itsanamune/TIMGPT): AI Integrated search engine. A custom chatbot incorporating OpenAI gpt-4 into Google Search. Allowing users to perform a google search via a chat interface and get real time answers via gpt-4 responses.
 
 ## 📫 How to Reach Me
 
