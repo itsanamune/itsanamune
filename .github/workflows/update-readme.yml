@@ -9,15 +9,25 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name 'GitHub Actions Bot'
+          git config user.email 'actions@github.com'
+
       - name: Update README
         run: |
           echo "## Updated Stats" >> README.md
           echo "Last updated: $(date)" >> README.md
-      - name: Commit changes
+
+      - name: Commit and Push Changes
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
           git add README.md
-          git commit -m "Update README" || exit 0
+          git commit -m "Update README with latest stats" || exit 0
+          git pull --rebase
           git push
