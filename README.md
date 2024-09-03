@@ -31,11 +31,47 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 ## 📊 GitHub Stats
 
+
+---
+
+## 🌐 How to Reach Me
+
+[![Email](https://img.shields.io/badge/Email-itsanamune%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:itsanamune@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Timothy%20Biondollo-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/timothy-biondollo)
+
+---
+
+## 🏅 Certifications and Achievements
+
+- **Google Analytics Certified**: Advanced understanding of web analytics and user behavior.
+- **HubSpot Content Marketing Certified**: Expert in developing high-quality content strategies.
+- **Certified in Python for Data Science**: Proficient in Python for data analysis and machine learning applications.
+
+---
+
+## 📈 Current Focus
+
+I am currently focused on enhancing my skills in AI-driven SEO strategies, expanding my knowledge in machine learning frameworks, and contributing to open-source AI projects that make an impact.
+
+---
+
+## 🤖 Fun Facts
+
+- 🔍 I enjoy experimenting with new AI models and frameworks.
+- 🎮 I'm a big fan of slot games and developing content strategies around them.
+- 📚 In my spare time, I love reading about technological advancements and AI ethics.
+
+---
+
+## 🚀 Let's Connect!
+
+Feel free to reach out if you have any interesting projects, opportunities, or if you just want to chat about AI, SEO, or web development!
 <!--START_SECTION:github_stats-->
 ![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)
 ![Trophies](https://github-profile-trophy.vercel.app/?username=itsanamune&theme=onedark&column=7)
+<!--END_SECTION:github_stats-->
 <!--END_SECTION:github_stats-->
 
 ---
