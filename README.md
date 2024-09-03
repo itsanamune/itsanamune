@@ -29,11 +29,11 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats (Including Private Repositories)
 
-![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical)
+![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsanamune&layout=compact&theme=radical&count_private=true)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=itsanamune&theme=radical)
 
