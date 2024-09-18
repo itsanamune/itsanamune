@@ -58,8 +58,8 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 - Total Repositories: 12
 - Public Repositories: 12
 - Private Repositories: null
-- Followers: 14
-- Following: 15
+- Followers: 16
+- Following: 16
 <!-- END_SECTION:stats -->
 
 ![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true)
