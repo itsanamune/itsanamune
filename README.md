@@ -55,8 +55,8 @@ I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Cur
 
 <!-- START_SECTION:stats -->
 **GitHub Stats (including private repositories):**
-- Total Repositories: 13
-- Public Repositories: 13
+- Total Repositories: 14
+- Public Repositories: 14
 - Private Repositories: null
 - Followers: 19
 - Following: 15
