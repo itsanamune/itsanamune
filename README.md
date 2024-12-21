@@ -1,8 +1,8 @@
 # Hello, I'm Timothy Biondollo 👋
 
-## 🚀 AI Specialist | SEO Content Creator | Web Developer | Google API Expert
+## 🚀 AI Specialist | Prompt Engineer | SEO Content Creator | Web Developer | Google API Expert
 
-I am an AI Specialist with a focus on NLP, ML, AI, SEO, and web development. Currently, I work as an AI Engineer at Spikeup Media, where I create and manage custom LLM systems and apps, create and manage production level prompts for LLMs, develop streamlined processes for AI content generation, and build automations for data analysis and business process automations. I also specialize in leveraging production level LLM APIs into custom business and marketing solutions.
+I am an AI Specialist and Prompt Engineer with a focus on NLP, ML, AI, SEO, and web development. Currently, I work as an AI Engineer at Spikeup Media, where I create and manage custom LLM systems and apps, create and manage production level prompts for LLMs, develop streamlined processes for AI content generation, and build automations for data analysis and business process automations. I also specialize in leveraging production level LLM APIs into custom business and marketing solutions.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=itsanamune&color=blueviolet)
 
