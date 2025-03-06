@@ -59,7 +59,7 @@ I am an AI Specialist and Prompt Engineer with a focus on NLP, ML, AI, SEO, and 
 - Public Repositories: 14
 - Private Repositories: null
 - Followers: 14
-- Following: 16
+- Following: 17
 <!-- END_SECTION:stats -->
 
 ![Timothy's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsanamune&show_icons=true&theme=radical&count_private=true)
