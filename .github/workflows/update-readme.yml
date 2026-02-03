@@ -1,0 +1,101 @@
+name: Update README with Dynamic Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Update README Stats
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          # Fetch user stats
+          user_stats=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/users/itsanamune)
+
+          # Fetch recent activity
+          events=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/users/itsanamune/events?per_page=30")
+
+          # Extract user data
+          public_repos=$(echo $user_stats | jq '.public_repos // 0')
+          private_repos=$(echo $user_stats | jq '.total_private_repos // 0')
+          total_repos=$((public_repos + private_repos))
+          followers=$(echo $user_stats | jq '.followers // 0')
+
+          # Count recent pushes
+          recent_pushes=$(echo $events | jq '[.[] | select(.type == "PushEvent")] | length')
+
+          # Get repos for language analysis
+          repos=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/users/itsanamune/repos?per_page=100&type=all")
+
+          # Get unique languages
+          languages=$(echo $repos | jq -r '[.[].language // empty] | unique | join(" · ")')
+
+          # Most recently updated repo
+          latest_repo=$(echo $repos | jq -r 'sort_by(.updated_at) | reverse | .[0].name // "N/A"')
+          latest_date=$(echo $repos | jq -r 'sort_by(.updated_at) | reverse | .[0].updated_at // "N/A"' | cut -d'T' -f1)
+
+          # Current date
+          current_date=$(date -u +"%B %d, %Y")
+
+          # Build the stats block
+          cat > /tmp/stats_block.md << 'HEREDOC_END'
+          <!-- START_SECTION:stats -->
+
+          | Metric | Count |
+          |:-------|------:|
+HEREDOC_END
+
+          echo "          | **Total Repositories** | ${total_repos} |" >> /tmp/stats_block.md
+          echo "          | ↳ Public | ${public_repos} |" >> /tmp/stats_block.md
+          echo "          | ↳ Private | ${private_repos} |" >> /tmp/stats_block.md
+          echo "          | **Followers** | ${followers} |" >> /tmp/stats_block.md
+          echo "          | **Recent Pushes** | ${recent_pushes} |" >> /tmp/stats_block.md
+          echo "" >> /tmp/stats_block.md
+          echo "          **Languages:** ${languages}" >> /tmp/stats_block.md
+          echo "          **Last Active Repo:** \`${latest_repo}\` · ${latest_date}" >> /tmp/stats_block.md
+          echo "          **Auto-updated:** ${current_date}" >> /tmp/stats_block.md
+          echo "" >> /tmp/stats_block.md
+          echo "          <!-- END_SECTION:stats -->" >> /tmp/stats_block.md
+
+          # Use Python for reliable multi-line replacement
+          python3 << 'PYEOF'
+          import re
+
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          with open('/tmp/stats_block.md', 'r') as f:
+              replacement = f.read()
+
+          # Strip leading whitespace from each line of replacement
+          replacement_clean = '\n'.join(line.strip() for line in replacement.strip().split('\n'))
+
+          pattern = r'<!-- START_SECTION:stats -->.*?<!-- END_SECTION:stats -->'
+          new_content = re.sub(pattern, replacement_clean, content, flags=re.DOTALL)
+
+          with open('README.md', 'w') as f:
+              f.write(new_content)
+          PYEOF
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name 'GitHub Actions Bot'
+          git config user.email 'actions@github.com'
+          git add README.md
+          git diff --cached --quiet || (git commit -m "📊 Auto-update profile stats — $(date -u +%Y-%m-%d)" && git push)
