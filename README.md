@@ -20,7 +20,6 @@ Most of my work lives in private repos. What's here is the public layer: Claude 
 | [**agent-sdk-sidekick**](https://github.com/itsanamune/agent-sdk-sidekick) | Claude Code plugin that deploys prototypes as Agent SDK projects with current, bundled documentation. |
 | [**The-Rogue-Orchestrator**](https://github.com/itsanamune/The-Rogue-Orchestrator) | Start building your AI harness. Companion repo to the newsletter. |
 | [**Promptomizer**](https://github.com/itsanamune/Promptomizer) | Turns a natural-language prompt or context into structured data (JSON, TOON) for token efficiency and better model responses. |
-| [**retellsimp**](https://github.com/itsanamune/retellsimp) | MCP server for Retell voice AI. |
 
 ### More
 
